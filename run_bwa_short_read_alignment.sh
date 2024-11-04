@@ -1,5 +1,8 @@
 #!/usr/bin/bash
 
+#bwa needs to be installed
+#samtools needs to be installed
+
 input_dir=$1
 output_dir=$2
 reference_genome=$3
