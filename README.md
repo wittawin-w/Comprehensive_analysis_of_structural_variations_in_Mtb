@@ -6,7 +6,7 @@ List of scripts
    After alignment, this scirpt also sorts aligned reads and generates BAM and its index files.
    Note: Add line 44 and 45, you can change the end-of-file according to yours.
 
-2. Single nucleotide variants (SNVs) and Small deletions/Insertions (small INDELs) calling
+2. Single nucleotide variants (SNVs) and small deletions/Insertions (small INDELs) calling
 
       2.1 Marks duplicated reads: (mark_duplicated_reads.sh)
 
