@@ -12,4 +12,6 @@ List of scripts
 
       This script marks the duplicated reads in sorted aligned reads files and create outputs
 
-      2.2 Variant calling ()
+      2.2 Variant calling (gatk_haplotypecaller.sh)
+
+      This script calls SNVs and small INDELs from BAM files that were marked the duplicated reads then outputs in g.vcf format
