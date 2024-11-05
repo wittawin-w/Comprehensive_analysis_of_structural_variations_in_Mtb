@@ -8,7 +8,8 @@ List of scripts
 
 2. Single nucleotide variants (SNVs) and Small deletions/Insertions (small INDELs) calling
 
-      2.1 Marks duplicated reads (mark_duplicated_reads.sh)
+      2.1 Marks duplicated reads: (mark_duplicated_reads.sh)
+
       This script marks the duplicated reads in sorted aligned reads files and create outputs
 
       2.2 Variant calling ()
