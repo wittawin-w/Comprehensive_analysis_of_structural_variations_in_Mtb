@@ -10,8 +10,9 @@ List of scripts
 
       2.1 Marks duplicated reads: (mark_duplicated_reads.sh)
 
-      This script marks the duplicated reads in sorted aligned reads files and create outputs
+      This script marks the duplicated reads in sorted aligned reads files and creates BAM file as the output.
 
       2.2 Variant calling (gatk_haplotypecaller.sh)
 
-      This script calls SNVs and small INDELs from BAM files that were marked the duplicated reads then outputs in g.vcf format
+      This script calls SNVs and small INDELs from BAM file that were marked the duplicated reads then outputs in g.vcf.gz format. In the study, we used NC_000962.3 as
+      the reference genome. Then, we set-up ploidy parameter as 2 and mapping minimum quality (mbq) parameter as 20.
