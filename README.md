@@ -16,3 +16,7 @@ List of scripts
 
       This script calls SNVs and small INDELs from BAM file that were marked the duplicated reads then outputs in g.vcf.gz format. In the study, we used NC_000962.3 as
       the reference genome. Then, we set-up ploidy parameter as 2 and mapping minimum quality (mbq) parameter as 20.
+
+      2.3 Joint genotyping (gatk_join_genotyping.sh)
+
+      This script will join-genotype all g.vcf.gz files in input direcotory and create multi samples VCF file as output.
