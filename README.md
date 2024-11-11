@@ -8,6 +8,8 @@ List of scripts
 
 2. Single nucleotide variants (SNVs) and small deletions/Insertions (small INDELs) calling
 
+      In this step, variant calling was performed using GATK4 (https://gatk.broadinstitute.org/hc/en-us)
+
       2.1 Marks duplicated reads: (mark_duplicated_reads.sh)
 
       This script marks the duplicated reads in sorted aligned reads files and creates BAM file as the output.
