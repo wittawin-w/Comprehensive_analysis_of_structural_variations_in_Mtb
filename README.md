@@ -1,5 +1,5 @@
 # Comprehensive_analysis_of_structural_variations_in_Mtb
-List of scripts
+These scripts were used for analysis in Worakitchanon, Wittawin et al. Cell Host & Microbe, Volume 32, Issue 11, 1972 - 1987.e6 (DOI: 10.1016/j.chom.2024.10.004)
  1. Paired-end illumina short reads alignment (run_bwa_short_read_alignment.sh)
    
    This script aligns paired-end illumnia short reads that have been trimmed by trimmomatics to the Mtb reference genome (Genbank: NC_000962.3) using "bwa-mem".
@@ -26,3 +26,7 @@ List of scripts
       2.4 Variant selection (gatk_selectvariant.sh)
 
       This script will filter SNVs or small INDELs that were called by GATK4 into separated VCF file.
+
+      2.5 Variant filtering (gatk_variant_filtering.sh)
+
+      This script will filter variant according to the desired parameters (please see the detail in paper)
