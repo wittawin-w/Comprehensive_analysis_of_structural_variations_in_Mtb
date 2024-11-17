@@ -27,6 +27,18 @@ These scripts were used for analysis in Worakitchanon, Wittawin et al. Cell Host
 
       This script will filter SNVs or small INDELs that were called by GATK4 into separated VCF file.
 
-      2.5 Variant filtering (gatk_variant_filtering.sh)
+      2.5.1 Variant filtering (gatk_variant_filtering.sh)
 
-      This script will filter variant according to the desired parameters (please see the detail in paper)
+      This script will use gatk tool to filter variant according to the desired parameters (please see the detail in paper)
+
+      2.5.2 Heterozygous filtering (heterozygous_filtering.py)
+
+      Since Mycobacterium tuberculosis genome is haploid, therefore, this script will check genotype of each individual across all variant positions.
+
+      Genotypes that are assigned as heterozygous are changed to missing genotype (./.).
+
+      For reference/alternative homoszygous calls (0/0 or 1/1) at any variant positions,
+      this script replace genotype of individual by missing genotype (./.) if depth of coverage less than 10.
+
+      For reference homozygous calls that their depth of coverages are eqaul or more than 10, this script will check the variant allele frequency (VAF; ratio of reads that
+      supports allele to total depth of coverage). If VAF of identified allele is equal to or less than 0.9, the genotype will be change to missing genotype.   
