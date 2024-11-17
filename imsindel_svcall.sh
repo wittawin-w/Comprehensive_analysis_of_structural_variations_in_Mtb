@@ -18,9 +18,6 @@ echo "ERROR: cannot detect directory for temporary files"
 exit
 fi
 
-module  use /usr/local/package/modulefiles/
-module load samtools/1.9
-
 echo "Indexing bamfile :$bamfile"
 samtools index $bamfile
 exit_value=$?
@@ -31,7 +28,7 @@ else
 echo "Indexing bamfile finish status: OK"
 fi
 echo "start running IMSindel"
-/home/ww160494/tools/IMSindel/bin/imsindel \
+/path/to/IMSindel/bin/imsindel \
 --bam $bamfile \
 --chr $ref_id \
 --outd $output_dir \
