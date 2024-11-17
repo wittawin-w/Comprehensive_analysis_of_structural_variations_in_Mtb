@@ -45,10 +45,15 @@ These scripts were used for analysis in Worakitchanon, Wittawin et al. Cell Host
 
 3. Large deletions/insertions (large INDELs) calling
 
-   In this study, we use four SV callers for calling large INDELs including
+   In this study, we use four strucatural variant (SV) callers for calling large INDELs including
    - IMSindel (https://github.com/NCGG-MGC/IMSindel)
    - Manta (https://github.com/Illumina/manta)
    - LUMPY (https://github.com/arq5x/lumpy-sv)
    - Wham (https://github.com/zeeev/wham)
 
-   3.1 IMSindel (imsindel_svcall.sh): This script will run imsindel to call INDELs from bamfile. Please ensure that all dependency of IMSindel have been provided before running. 
+   3.1 IMSindel (imsindel_svcall.sh): This script will run imsindel to call INDELs from bamfile. Please ensure that all dependencies of IMSindel have been provided in line
+       31 and 44 - 47 of script before running.
+
+   3.2 Manta (manta_svcall.sh): This script will run manta to call SVs from bamfile. Noted that this manta needs python2 for executing and ensure that path in line 7 of
+       this script has been provided before running. 
+        
