@@ -1,6 +1,7 @@
 import sys
 
 filename = str(sys.argv[1])
+# Input is VCF
 
 with open(filename) as variant_file:
 	for line in variant_file:
