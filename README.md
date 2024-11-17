@@ -50,3 +50,5 @@ These scripts were used for analysis in Worakitchanon, Wittawin et al. Cell Host
    - Manta (https://github.com/Illumina/manta)
    - LUMPY (https://github.com/arq5x/lumpy-sv)
    - Wham (https://github.com/zeeev/wham)
+
+   3.1 IMSindel (imsindel_svcall.sh): This script will run imsindel to call INDELs from bamfile. Please ensure that all dependency of IMSindel have been provided before running. 
