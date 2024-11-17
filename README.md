@@ -58,5 +58,7 @@ These scripts were used for analysis in Worakitchanon, Wittawin et al. Cell Host
        this script has been provided before running.
 
    3.3 LUMPY (lumpy_svcall.sh): This script will run LUMPY to call SVs from bamfile. Samtools is required for this script.
-       Noted that LUMPY needs python2 for executing and please ensure that path to lumpy in line 53 has been provided before running. 
+       Noted that LUMPY needs python2 for executing and please ensure that path to LUMPY in line 43 has been provided before running.
+
+   3.4 Wham (wham_svcall.sh): THis script will run Wham to call SVs from bamfile. Please ensure to provide path to wham in line 12 and 15 before running.
         
