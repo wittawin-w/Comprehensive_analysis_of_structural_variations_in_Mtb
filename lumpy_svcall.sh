@@ -29,7 +29,7 @@ else
 fi
 
 samtools view -h $bamfile \
-| /home/ww160494/tools/lumpy-sv/scripts/extractSplitReads_BwaMem -i stdin \
+| /path/to/lumpy-sv/scripts/extractSplitReads_BwaMem -i stdin \
 | samtools view -Sb - > $tmp_dir/${sample_name}_spliter.bam
 exit_value=$?
 if [ $exit_value != 0 ]; then
@@ -39,18 +39,8 @@ else
 	echo "Split read bam: OK"
 fi
 
-source ~/py_env/lumpy/bin/activate
-exit_value=$?
-if [ $exit_value != 0 ]; then
-	echo "ERROR with virtual environment activation: $exit_value"
-	exit
-else
-	echo "source ~/py_env/lumpy/bin/activate"
-	echo "activate virtual environment for lumpy"
-fi
-
 echo "apply lumpyexpress"
-/home/ww160494/tools/lumpy-sv/bin/lumpyexpress \
+/path/to/lumpyexpress \
 -B $bamfile \
 -S $tmp_dir/${sample_name}_spliter.bam \
 -D $tmp_dir/${sample_name}_discord.bam \
@@ -63,9 +53,6 @@ if [ $exit_value != 0 ]; then
 else
 	echo "lumpyexpress finish status: OK"
 fi
-
-#rm -r $tmp_dir
-
 
 #echo "remove temporary directory"
 echo "Finish LUMPY"
