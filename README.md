@@ -46,7 +46,7 @@ These scripts were used for analysis in Worakitchanon, Wittawin et al. Cell Host
 3. Large deletions/insertions (large INDELs) calling
 
    In this study, we use four SV callers for calling large INDELs including
-   IMSindel (https://github.com/NCGG-MGC/IMSindel)
-   Manta (https://github.com/Illumina/manta)
-   LUMPY (https://github.com/arq5x/lumpy-sv)
-   Wham (https://github.com/zeeev/wham)
+   - IMSindel (https://github.com/NCGG-MGC/IMSindel)
+   - Manta (https://github.com/Illumina/manta)
+   - LUMPY (https://github.com/arq5x/lumpy-sv)
+   - Wham (https://github.com/zeeev/wham)
