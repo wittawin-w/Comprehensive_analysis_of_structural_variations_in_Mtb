@@ -54,6 +54,9 @@ These scripts were used for analysis in Worakitchanon, Wittawin et al. Cell Host
    3.1 IMSindel (imsindel_svcall.sh): This script will run imsindel to call INDELs from bamfile. Please ensure that all dependencies of IMSindel have been provided in line
        31 and 44 - 47 of script before running.
 
-   3.2 Manta (manta_svcall.sh): This script will run manta to call SVs from bamfile. Noted that this manta needs python2 for executing and ensure that path in line 7 of
-       this script has been provided before running. 
+   3.2 Manta (manta_svcall.sh): This script will run manta to call SVs from bamfile. Noted that manta needs python2 for executing and please ensure that path in line 7 of
+       this script has been provided before running.
+
+   3.3 LUMPY (lumpy_svcall.sh): This script will run LUMPY to call SVs from bamfile. Samtools is required for this script.
+       Noted that LUMPY needs python2 for executing and please ensure that path to lumpy in line 53 has been provided before running. 
         
