@@ -43,4 +43,10 @@ These scripts were used for analysis in Worakitchanon, Wittawin et al. Cell Host
       For reference homozygous calls that their depth of coverages are eqaul or more than 10, this script will check the variant allele frequency (VAF; ratio of reads that
       supports allele to total depth of coverage). If VAF of identified allele is equal to or less than 0.9, the genotype will be change to missing genotype.
 
-3. Large deletions/insertions (large INDELs) calling    
+3. Large deletions/insertions (large INDELs) calling
+
+   In this study, we use four SV callers for calling large INDELs including
+   IMSindel (https://github.com/NCGG-MGC/IMSindel)
+   Manta (https://github.com/Illumina/manta)
+   LUMPY (https://github.com/arq5x/lumpy-sv)
+   Wham (https://github.com/zeeev/wham)
