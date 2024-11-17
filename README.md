@@ -2,9 +2,9 @@
 These scripts were used for analysis in Worakitchanon, Wittawin et al. Cell Host & Microbe, Volume 32, Issue 11, 1972 - 1987.e6 (DOI: 10.1016/j.chom.2024.10.004)
  1. Paired-end illumina short reads alignment (run_bwa_short_read_alignment.sh)
    
-   This script aligns paired-end illumnia short reads that have been trimmed by trimmomatics to the Mtb reference genome (Genbank: NC_000962.3) using "bwa-mem".
-   After alignment, this scirpt also sorts aligned reads and generates BAM and its index files.
-   Note: Add line 44 and 45, you can change the end-of-file according to yours.
+    This script aligns paired-end illumnia short reads that have been trimmed by trimmomatics to the Mtb reference genome (Genbank: NC_000962.3) using "bwa-mem".
+    After alignment, this scirpt also sorts aligned reads and generates BAM and its index files.
+    Note: Add line 44 and 45, you can change the end-of-file according to yours.
 
  2. Single nucleotide variants (SNVs) and small deletions/Insertions (small INDELs) calling
 
@@ -41,4 +41,6 @@ These scripts were used for analysis in Worakitchanon, Wittawin et al. Cell Host
       this script replace genotype of individual by missing genotype (./.) if depth of coverage less than 10.
 
       For reference homozygous calls that their depth of coverages are eqaul or more than 10, this script will check the variant allele frequency (VAF; ratio of reads that
-      supports allele to total depth of coverage). If VAF of identified allele is equal to or less than 0.9, the genotype will be change to missing genotype.   
+      supports allele to total depth of coverage). If VAF of identified allele is equal to or less than 0.9, the genotype will be change to missing genotype.
+
+3. Large deletions/insertions (large INDELs) calling    
