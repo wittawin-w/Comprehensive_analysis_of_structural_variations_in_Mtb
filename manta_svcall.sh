@@ -1,8 +1,8 @@
 #!/usr/bin/bash
 
-bamfile=$1
-ref=$2
-output_dir=$3
+bamfile=$1 #input bam file
+ref=$2 #path to reference genome
+output_dir=$3 #path to output directory
 
 python2 /path/to/manta-1.6.0/build/bin/configManta.py \
 --bam $bamfile \
