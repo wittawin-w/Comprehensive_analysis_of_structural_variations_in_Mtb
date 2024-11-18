@@ -62,7 +62,9 @@ These scripts were used for analysis in Worakitchanon, Wittawin et al. Cell Host
 
    3.1.4 Wham (wham_svcall.sh): THis script will run Wham to call SVs from bamfile. Please ensure to provide path to wham in line 12 and 15 before running.
 
-   3.2 Genotype calling for LUMPY and Wham outputs (svtyper.sh) This script identify variants genotypes in samples that were called by LUMPY and Wham.
+   3.2 Genotype calling for LUMPY and Wham outputs (svtyper.sh)
+
+   This script identify variants genotypes in samples that were called by LUMPY and Wham.
 
          
         
