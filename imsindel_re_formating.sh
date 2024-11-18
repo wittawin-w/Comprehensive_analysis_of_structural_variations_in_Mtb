@@ -1,9 +1,9 @@
 #!/usr/bin/bash
 
 
-input_dir=$1 
-output_dir=$2
-caller_id=$3
+input_dir=$1 #path to output directory of IMSindel (main output directory)
+output_dir=$2 #path to output directory
+caller_id=$3 # provide I (IMSindel)
 
 if [ ! -d $output_dir ];then
 	echo "NEED output directory"
