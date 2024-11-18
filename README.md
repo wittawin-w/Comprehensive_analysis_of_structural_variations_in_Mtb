@@ -64,7 +64,7 @@ These scripts were used for analysis in Worakitchanon, Wittawin et al. Cell Host
 
    3.2 Genotype calling for LUMPY and Wham outputs (svtyper.sh)
 
-       This script define variants genotypes in samples that were called by LUMPY and Wham.
+       This script identify variants genotypes in samples that were called by LUMPY and Wham.
 
          
         
