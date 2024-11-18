@@ -51,14 +51,24 @@ These scripts were used for analysis in Worakitchanon, Wittawin et al. Cell Host
    - LUMPY (https://github.com/arq5x/lumpy-sv)
    - Wham (https://github.com/zeeev/wham)
 
-   3.1 IMSindel (imsindel_svcall.sh): This script will run imsindel to call INDELs from bamfile. Please ensure that all dependencies of IMSindel have been provided in line
+   3.1.1 IMSindel (imsindel_svcall.sh): This script will run imsindel to call INDELs from bamfile. Please ensure that all dependencies of IMSindel have been provided in line
        31 and 44 - 47 of script before running.
 
-   3.2 Manta (manta_svcall.sh): This script will run manta to call SVs from bamfile. Noted that manta needs python2 for executing and please ensure that path in line 7 of
+   3.1.2 Manta (manta_svcall.sh): This script will run manta to call SVs from bamfile. Noted that manta needs python2 for executing and please ensure that path in line 7 of
        this script has been provided before running.
 
-   3.3 LUMPY (lumpy_svcall.sh): This script will run LUMPY to call SVs from bamfile. Samtools is required for this script.
+   3.1.3 LUMPY (lumpy_svcall.sh): This script will run LUMPY to call SVs from bamfile. Samtools is required for this script.
        Noted that LUMPY needs python2 for executing and please ensure that path to LUMPY in line 43 has been provided before running.
 
-   3.4 Wham (wham_svcall.sh): THis script will run Wham to call SVs from bamfile. Please ensure to provide path to wham in line 12 and 15 before running.
+   3.1.4 Wham (wham_svcall.sh): THis script will run Wham to call SVs from bamfile. Please ensure to provide path to wham in line 12 and 15 before running.
+
+   3.2 Genotype calling for LUMPY and Wham outputs (svtyper.sh)
+
+       This script define variant genotype of each individual sample that were called by LUMPY and Wham
+
+   3.3 Making unified format for all outputs from SV callers
+
+       3.3.1 IMSindel (imsindel_re_formating.sh and imsindel_re_formating.py): Please provide the path to imsindel_re_formating.py in line 17 before running.
+
+       3.3.2 
         
