@@ -52,13 +52,13 @@ These scripts were used for analysis in Worakitchanon, Wittawin et al. Cell Host
    - Wham (https://github.com/zeeev/wham)
 
    3.1.1 IMSindel (imsindel_svcall.sh): This script will run imsindel to call INDELs from bamfile. Please ensure that all dependencies of IMSindel have been provided in line
-       31 and 44 - 47 of script before running.
+         31 and 44 - 47 of script before running.
 
    3.1.2 Manta (manta_svcall.sh): This script will run manta to call SVs from bamfile. Noted that manta needs python2 for executing and please ensure that path in line 7 of
-       this script has been provided before running.
+         this script has been provided before running.
 
    3.1.3 LUMPY (lumpy_svcall.sh): This script will run LUMPY to call SVs from bamfile. Samtools is required for this script.
-       Noted that LUMPY needs python2 for executing and please ensure that path to LUMPY in line 43 has been provided before running.
+         Noted that LUMPY needs python2 for executing and please ensure that path to LUMPY in line 43 has been provided before running.
 
    3.1.4 Wham (wham_svcall.sh): THis script will run Wham to call SVs from bamfile. Please ensure to provide path to wham in line 12 and 15 before running.
 
@@ -68,7 +68,10 @@ These scripts were used for analysis in Worakitchanon, Wittawin et al. Cell Host
 
    3.3 Making unified format for all outputs from SV callers
 
-       3.3.1 IMSindel (imsindel_re_formating.sh and imsindel_re_formating.py): Please provide the path to imsindel_re_formating.py in line 17 before running.
+       3.3.1 IMSindel (imsindel_re_formating.sh and imsindel_re_formating.py): Running script is imsindel_re_formating.sh.
+             Please provide the path to imsindel_re_formating.py in line 17 of imsindel_re_formating.sh before running.
 
-       3.3.2 
+       3.3.2 MANTA (run_change_format_manta.sh, manta_reformating.sh and manta_re_formating.py): Runing script is run_change_format_manta.sh. Please provide path to
+             manta_reformating.sh in line 19 of run_change_format_manta.sh and provide path to manta_reformating.py in line 26 of manta_reformating.sh before running.
+         
         
