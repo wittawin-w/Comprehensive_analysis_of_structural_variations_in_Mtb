@@ -66,7 +66,5 @@ These scripts were used for analysis in Worakitchanon, Wittawin et al. Cell Host
 
        This script define variant genotypes in each individual sample that were called by LUMPY and Wham
 
-   3.3 Making the output format similar among SVcallers
-
          
         
