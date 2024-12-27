@@ -10,28 +10,28 @@
 
       In this step, variant calling was performed using GATK4 (https://gatk.broadinstitute.org/hc/en-us).
 
-      2.1 Marks duplicated reads: (mark_duplicated_reads.sh)
+      2.1 Marks duplicated reads: (`mark_duplicated_reads.sh`)
 
       This script marks the duplicated reads in sorted aligned reads files and creates BAM file as the output.
 
-      2.2 Variant calling (gatk_haplotypecaller.sh)
+      2.2 Variant calling (`gatk_haplotypecaller.sh`)
 
       This script calls SNVs and small INDELs from BAM file that were marked the duplicated reads then outputs in g.vcf.gz format. In the study, we used NC_000962.3 as
       the reference genome. Then, we set-up ploidy parameter as 2 and mapping minimum quality (mbq) parameter as 20.
 
-      2.3 Joint genotyping (gatk_join_genotyping.sh)
+      2.3 Joint genotyping (`gatk_join_genotyping.sh`)
 
       This script will join-genotype all g.vcf.gz files in input direcotory and create multi samples VCF file as output.
 
-      2.4 Variant selection (gatk_selectvariant.sh)
+      2.4 Variant selection (`gatk_selectvariant.sh`)
 
       This script will filter SNVs or small INDELs that were called by GATK4 into separated VCF file.
 
-      2.5.1 Variant filtering (gatk_variant_filtering.sh)
+      2.5.1 Variant filtering (`gatk_variant_filtering.sh`)
 
       This script will use gatk tool to filter variant according to the desired parameters (please see the detail in paper)
 
-      2.5.2 Heterozygous filtering (heterozygous_filtering.py)
+      2.5.2 Heterozygous filtering (`heterozygous_filtering.py`)
 
       Since Mycobacterium tuberculosis genome is haploid, therefore, this script will check genotype of each individual across all variant positions.
 
@@ -51,29 +51,28 @@
    - LUMPY (https://github.com/arq5x/lumpy-sv)
    - Wham (https://github.com/zeeev/wham)
 
-   3.1.1 IMSindel (imsindel_svcall.sh): This script will run imsindel to call INDELs from bamfile. Please ensure that all dependencies of IMSindel have been provided in line
+   3.1.1 IMSindel (`imsindel_svcall.sh`): This script will run imsindel to call INDELs from bamfile. Please ensure that all dependencies of IMSindel have been provided in line
          31 and 44 - 47 of script before running.
 
-   3.1.2 Manta (manta_svcall.sh): This script will run manta to call SVs from bamfile. Noted that manta needs python2 for executing and please ensure that path in line 7 of
+   3.1.2 Manta (`manta_svcall.sh`): This script will run manta to call SVs from bamfile. Noted that manta needs python2 for executing and please ensure that path in line 7 of
          this script has been provided before running.
 
-   3.1.3 LUMPY (lumpy_svcall.sh): This script will run LUMPY to call SVs from bamfile. Samtools is required for this script.
+   3.1.3 LUMPY (`lumpy_svcall.sh`): This script will run LUMPY to call SVs from bamfile. Samtools is required for this script.
          Noted that LUMPY needs python2 for executing and please ensure that path to LUMPY in line 43 has been provided before running.
 
-   3.1.4 Wham (wham_svcall.sh): THis script will run Wham to call SVs from bamfile. Please ensure to provide path to wham in line 12 and 15 before running.
+   3.1.4 Wham (`wham_svcall.sh`): THis script will run Wham to call SVs from bamfile. Please ensure to provide path to wham in line 12 and 15 before running.
 
-   3.2 Genotype calling for LUMPY and Wham outputs (svtyper.sh)
+   3.2 Genotype calling for LUMPY and Wham outputs (`svtyper.sh`)
 
    This script identify variants genotypes in samples that were called by LUMPY and Wham.
 
    3.3 Create the similar output format across all SV callers
 
-   3.3.1 IMSindel (imsindel_re_formating.sh and imsindel_re_formating.py): Running script is imsindel_re_formating.sh. Please provide the path to imsindel_re_formating.py in line 17 of imsindel_re_formating.sh before running.
+   3.3.1 IMSindel (`imsindel_re_formating.sh` and `imsindel_re_formating.py`): Running script is `imsindel_re_formating.sh`. Please provide the path to imsindel_re_formating.py in line 17 of `imsindel_re_formating.sh` before running.
 
-   3.3.2 MANTA (run_change_format_manta.sh, manta_reformating.sh and manta_re_formating.py): Runing script is run_change_format_manta.sh. Please provide path to manta_reformating.sh in line 19 of run_change_format_manta.sh and provide path to manta_reformating.py in line 26 of manta_reformating.sh before running.
+   3.3.2 MANTA (`run_change_format_manta.sh`, `manta_reformating.sh` and `manta_re_formating.py`): Runing script is `run_change_format_manta.sh`. Please provide path to `manta_reformating.sh` in line 19 of `run_change_format_manta.sh` and provide path to `manta_reformating.py` in line 26 of `manta_reformating.sh` before running.
 
-   ### Note: vcf from LUMPY and Wham were identified genotypes of variants using SVtyper and it should run before reformat
-   3.3.3 LUMPY (run_change_format_lumpy.sh, lumpy_re_formating.py): Running script is run_change_format_lumpy.sh. Please provide the path to lumpy_re_formating.py in line 21 of run_change_format_lumpy.sh before running
+   3.3.3 LUMPY (`run_change_format_lumpy.sh`, `lumpy_re_formating.py`): Running script is `run_change_format_lumpy.sh`. Please provide the path to `lumpy_re_formating.py` in line 21 of `run_change_format_lumpy.sh` before running
 
  
 
