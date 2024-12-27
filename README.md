@@ -71,6 +71,7 @@ These scripts were used for analysis in Worakitchanon, Wittawin et al. Cell Host
    3.3.1 IMSindel (imsindel_re_formating.sh and imsindel_re_formating.py): Running script is imsindel_re_formating.sh. Please provide the path to imsindel_re_formating.py in line 17 of imsindel_re_formating.sh before running.
 
    3.3.2 MANTA (run_change_format_manta.sh, manta_reformating.sh and manta_re_formating.py): Runing script is run_change_format_manta.sh. Please provide path to manta_reformating.sh in line 19 of run_change_format_manta.sh and provide path to manta_reformating.py in line 26 of manta_reformating.sh before running.
+   3.3.3 LUMPY (run_change_format_lumpy.sh)
 
  
 
