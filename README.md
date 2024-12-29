@@ -85,6 +85,10 @@
 
    4.2 Merge insertion calls from SV callers in each sample (`run_merge_callers_for_each_indv_bp.sh`, `pre_select_var.py`, `remove_headline.py`, `merge_callers_for_each_indv_bp.py`): Running script is `run_merge_callers_for_each_indv_bp.sh`. Please setup path to each reformatted file in line 23, path to `pre_select_var.py` in line 32 and 52, path to `remove_headline.py` in line 44 and path to `merge_callers_for_each_indv_bp.py` in line 66 in the running script be for run it
 
+5. Merge all samples into one table
+
+  5.1 Deletions (`run_unify_callset_allsample_coverage.sh`, `unify_callset_remove_headline.py`, `unify_callset_allsam_coverage.py`): Running script is `run_unify_callset_allsample_coverage.sh` please make sure to set path to `unify_callset_remove_headline.py` in line 18 and path to `unify_callset_allsam_coverage.py` in line 30 before running
+
  
 
 
