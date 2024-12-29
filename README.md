@@ -87,7 +87,9 @@
 
 5. Merge all samples into one table
 
-   5.1 Deletions (`run_unify_callset_allsample_coverage.sh`, `unify_callset_remove_headline.py`, `unify_callset_allsam_coverage.py`): Running script is `run_unify_callset_allsample_coverage.sh` please make sure to set path to `unify_callset_remove_headline.py` in line 18 and path to `unify_callset_allsam_coverage.py` in line 30 before running
+   5.1 Deletions (`run_unify_callset_allsample_coverage.sh`, `unify_callset_remove_headline.py`, `unify_callset_allsam_coverage.py`): Running script is `run_unify_callset_allsample_coverage.sh`. Please make sure to set path to `unify_callset_remove_headline.py` in line 18 and path to `unify_callset_allsam_coverage.py` in line 30 before running
+
+   5.2 Insertions (`run_unify_callset_allsample_bp.sh`, `unify_callset_remove_headline.py`, `unify_callset_allsam_bp.py`): Running script is `run_unify_callset_allsample_bp.sh`. Please make sure to set path to `unify_callset_remove_headline.py` in line 18 and `unify_callset_allsam_bp.py` in line 30 before running 
 
  
 
