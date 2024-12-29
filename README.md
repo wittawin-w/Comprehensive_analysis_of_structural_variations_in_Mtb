@@ -75,21 +75,21 @@
 
    3.3.2 MANTA (`run_change_format_manta.sh`, `manta_reformating.sh` and `manta_re_formating.py`): Runing script is `run_change_format_manta.sh`. Please provide path to `manta_reformating.sh` in line 19 of `run_change_format_manta.sh` and provide path to `manta_reformating.py` in line 26 of `manta_reformating.sh` before running.
 
-   3.3.3 LUMPY (`run_change_format_lumpy.sh`, `lumpy_re_formating.py`): Running script is `run_change_format_lumpy.sh`. Please provide the path to `lumpy_re_formating.py` in line 21 of `run_change_format_lumpy.sh` before running
+   3.3.3 LUMPY (`run_change_format_lumpy.sh`, `lumpy_re_formating.py`): Running script is `run_change_format_lumpy.sh`. Please provide the path to `lumpy_re_formating.py` in line 21 of `run_change_format_lumpy.sh` before running.
 
-   3.3.4 Wham (`run_change_format_wham.sh`, `wham_re_formating.py`): Running script is `run_change_format_wham.sh`. Please provide the path to `wham_re_formating.py` in line 21 of `run_change_format_wham.sh` before running
+   3.3.4 Wham (`run_change_format_wham.sh`, `wham_re_formating.py`): Running script is `run_change_format_wham.sh`. Please provide the path to `wham_re_formating.py` in line 21 of `run_change_format_wham.sh` before running.
 
 4. Merge reformatted result of each sample for large insertions and deletions
 
-   4.1 Merge deletion calls from four SV callers in each sample (`run_merge_callers_for_each_indv_coverage.sh`, `pre_select_var.py`, `remove_headline.py`, `merge_callers_for_each_indv_coverage.py`): Running script is `run_merge_callers_for_each_indv_coverage.sh`. Please setup path to each reformatted file in line 24, path to `pre_select_var.py` in line 33 and 53, path to `remove_headline.py` in line 45 and path to `merge_callers_for_each_indv_coverage.py` in line 67 in the running script be for run it
+   4.1 Merge deletion calls from four SV callers in each sample (`run_merge_callers_for_each_indv_coverage.sh`, `pre_select_var.py`, `remove_headline.py`, `merge_callers_for_each_indv_coverage.py`): Running script is `run_merge_callers_for_each_indv_coverage.sh`. Please setup path to each reformatted file in line 24, path to `pre_select_var.py` in line 33 and 53, path to `remove_headline.py` in line 45 and path to `merge_callers_for_each_indv_coverage.py` in line 67 in the running script be for run it.
 
-   4.2 Merge insertion calls from SV callers in each sample (`run_merge_callers_for_each_indv_bp.sh`, `pre_select_var.py`, `remove_headline.py`, `merge_callers_for_each_indv_bp.py`): Running script is `run_merge_callers_for_each_indv_bp.sh`. Please setup path to each reformatted file in line 23, path to `pre_select_var.py` in line 32 and 52, path to `remove_headline.py` in line 44 and path to `merge_callers_for_each_indv_bp.py` in line 66 in the running script be for run it
+   4.2 Merge insertion calls from SV callers in each sample (`run_merge_callers_for_each_indv_bp.sh`, `pre_select_var.py`, `remove_headline.py`, `merge_callers_for_each_indv_bp.py`): Running script is `run_merge_callers_for_each_indv_bp.sh`. Please setup path to each reformatted file in line 23, path to `pre_select_var.py` in line 32 and 52, path to `remove_headline.py` in line 44 and path to `merge_callers_for_each_indv_bp.py` in line 66 in the running script be for run it.
 
 5. Merge all samples into one table
 
-   5.1 Deletions (`run_unify_callset_allsample_coverage.sh`, `unify_callset_remove_headline.py`, `unify_callset_allsam_coverage.py`): Running script is `run_unify_callset_allsample_coverage.sh`. Please make sure to set path to `unify_callset_remove_headline.py` in line 18 and path to `unify_callset_allsam_coverage.py` in line 30 before running
+   5.1 Deletions (`run_unify_callset_allsample_coverage.sh`, `unify_callset_remove_headline.py`, `unify_callset_allsam_coverage.py`): Running script is `run_unify_callset_allsample_coverage.sh`. Please make sure to set path to `unify_callset_remove_headline.py` in line 18 and path to `unify_callset_allsam_coverage.py` in line 30 before running.
 
-   5.2 Insertions (`run_unify_callset_allsample_bp.sh`, `unify_callset_remove_headline.py`, `unify_callset_allsam_bp.py`): Running script is `run_unify_callset_allsample_bp.sh`. Please make sure to set path to `unify_callset_remove_headline.py` in line 18 and `unify_callset_allsam_bp.py` in line 30 before running 
+   5.2 Insertions (`run_unify_callset_allsample_bp.sh`, `unify_callset_remove_headline.py`, `unify_callset_allsam_bp.py`): Running script is `run_unify_callset_allsample_bp.sh`. Please make sure to set path to `unify_callset_remove_headline.py` in line 18 and `unify_callset_allsam_bp.py` in line 30 before running. 
 
  
 
