@@ -1,13 +1,13 @@
 # Comprehensive_analysis_of_structural_variations_in_Mtb
 ## These scripts were used for analysis in Worakitchanon, Wittawin et al. Cell Host & Microbe, Volume 32, Issue 11, 1972 - 1987.e6 (DOI: 10.1016/j.chom.2024.10.004)
 
- ### 1. Paired-end illumina short reads alignment (`run_bwa_short_read_alignment.sh`)
+1. Paired-end illumina short reads alignment (`run_bwa_short_read_alignment.sh`)
    
     This script aligns paired-end illumnia short reads that have been trimmed by trimmomatics to the Mtb reference genome (Genbank: NC_000962.3) using "bwa-mem".
     After alignment, this scirpt also sorts aligned reads and generates BAM and its index files.
     Note: Add line 44 and 45, you can change the end-of-file according to yours.
 
- ### 2. Single nucleotide variants (SNVs) and small deletions/Insertions (small INDELs) calling
+ 2. Single nucleotide variants (SNVs) and small deletions/Insertions (small INDELs) calling
 
       In this step, variant calling was performed using GATK4 (https://gatk.broadinstitute.org/hc/en-us).
 
@@ -44,7 +44,7 @@
       For reference homozygous calls that their depth of coverages are eqaul or more than 10, this script will check the variant allele frequency (VAF; ratio of reads that
       supports allele to total depth of coverage). If VAF of identified allele is equal to or less than 0.9, the genotype will be change to missing genotype.
 
-### 3. Large deletions/insertions (large INDELs) calling
+3. Large deletions/insertions (large INDELs) calling
 
    In this study, we use four strucatural variant (SV) callers for calling large INDELs including
    - IMSindel (https://github.com/NCGG-MGC/IMSindel)
@@ -52,7 +52,7 @@
    - LUMPY (https://github.com/arq5x/lumpy-sv)
    - Wham (https://github.com/zeeev/wham)
 
-   #### 3.1 SV calling
+3.1 SV calling
    
    3.1.1 IMSindel (`imsindel_svcall.sh`): This script will run imsindel to call INDELs from bamfile. Please ensure that all dependencies of IMSindel have been provided in line
          31 and 44 - 47 of script before running.
@@ -65,11 +65,11 @@
 
    3.1.4 Wham (`wham_svcall.sh`): THis script will run Wham to call SVs from bamfile. Please ensure to provide path to wham in line 12 and 15 before running.
 
-   #### 3.2 Genotype calling for LUMPY and Wham outputs (`svtyper.sh`)
+3.2 Genotype calling for LUMPY and Wham outputs (`svtyper.sh`)
 
    This script identify variants genotypes in samples that were called by LUMPY and Wham.
 
-   #### 3.3 Create the similar output format across all SV callers
+3.3 Create the similar output format across all SV callers
 
    3.3.1 IMSindel (`imsindel_re_formating.sh` and `imsindel_re_formating.py`): Running script is `imsindel_re_formating.sh`. Please provide the path to imsindel_re_formating.py in line 17 of `imsindel_re_formating.sh` before running.
 
