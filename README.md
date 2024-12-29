@@ -52,7 +52,7 @@
    - LUMPY (https://github.com/arq5x/lumpy-sv)
    - Wham (https://github.com/zeeev/wham)
 
-3.1 SV calling
+   3.1 SV calling
    
    3.1.1 IMSindel (`imsindel_svcall.sh`): This script will run imsindel to call INDELs from bamfile. Please ensure that all dependencies of IMSindel have been provided in line
          31 and 44 - 47 of script before running.
@@ -65,11 +65,11 @@
 
    3.1.4 Wham (`wham_svcall.sh`): THis script will run Wham to call SVs from bamfile. Please ensure to provide path to wham in line 12 and 15 before running.
 
-3.2 Genotype calling for LUMPY and Wham outputs (`svtyper.sh`)
+   3.2 Genotype calling for LUMPY and Wham outputs (`svtyper.sh`)
 
    This script identify variants genotypes in samples that were called by LUMPY and Wham.
 
-3.3 Create the similar output format across all SV callers
+   3.3 Create the similar output format across all SV callers
 
    3.3.1 IMSindel (`imsindel_re_formating.sh` and `imsindel_re_formating.py`): Running script is `imsindel_re_formating.sh`. Please provide the path to imsindel_re_formating.py in line 17 of `imsindel_re_formating.sh` before running.
 
