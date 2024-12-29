@@ -83,6 +83,8 @@
 
    4.1 Merge deletion calls from four SV callers in each sample (`run_merge_callers_for_each_indv_coverage.sh`, `pre_select_var.py`, `remove_headline.py`, `merge_callers_for_each_indv_coverage.py`): Running script is `run_merge_callers_for_each_indv_coverage.sh`. Please setup path to each reformatted file in line 24, path to `pre_select_var.py` in line 33 and 53, path to `remove_headline.py` in line 45 and path to `merge_callers_for_each_indv_coverage.py` in line 67 in the running script be for run it
 
+   4.2 Merge insertion calls from SV callers in each sample (`run_merge_callers_for_each_indv_bp.sh`, `pre_select_var.py`, `remove_headline.py`, `merge_callers_for_each_indv_bp.py`): Running script is `run_merge_callers_for_each_indv_bp.sh`. Please setup path to each reformatted file in line 23, path to `pre_select_var.py` in line 32 and 52, path to `remove_headline.py` in line 44 and path to `merge_callers_for_each_indv_bp.py` in line 66 in the running script be for run it
+
  
 
 
