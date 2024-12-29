@@ -79,6 +79,10 @@
 
    3.3.4 Wham (`run_change_format_wham.sh`, `wham_re_formating.py`): Running script is `run_change_format_wham.sh`. Please provide the path to `wham_re_formating.py` in line 21 of `run_change_format_wham.sh` before running
 
+4. Merge reformatted result of each sample for large insertions and deletions
+
+   4.1 Merge deletion calls from four SV callers in each sample (`run_merge_callers_for_each_indv_coverage.sh`, `pre_select_var.py`, `remove_headline.py`, `merge_callers_for_each_indv_coverage.py`): Running script is `run_merge_callers_for_each_indv_coverage.sh`. Please setup path to each reformatted file in line 24, path to `pre_select_var.py` in line 33 and 53, path to `remove_headline.py` in line 45 and path to `merge_callers_for_each_indv_coverage.py` in line 67 in the running script be for run it
+
  
 
 
