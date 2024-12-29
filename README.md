@@ -73,6 +73,7 @@
    3.3.2 MANTA (`run_change_format_manta.sh`, `manta_reformating.sh` and `manta_re_formating.py`): Runing script is `run_change_format_manta.sh`. Please provide path to `manta_reformating.sh` in line 19 of `run_change_format_manta.sh` and provide path to `manta_reformating.py` in line 26 of `manta_reformating.sh` before running.
 
    3.3.3 LUMPY (`run_change_format_lumpy.sh`, `lumpy_re_formating.py`): Running script is `run_change_format_lumpy.sh`. Please provide the path to `lumpy_re_formating.py` in line 21 of `run_change_format_lumpy.sh` before running
+   3.3.4 Wham (`run_change_format_wham.sh`, `wham_re_formating.py`): Running script is `run_change_format_wham.sh`. Please provide the path to `wham_re_formating.py` in line 21 of `run_change_format_wham.sh` before running
 
  
 
